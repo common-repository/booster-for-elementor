@@ -1,0 +1,32 @@
+/*==================================================================*\
+===============      	  1- Icon Chooser Style          	==============
+\*==================================================================*/
+.elb-ichs-ctn{float: right;}
+.elb-ichs-ctrl{width: 72px; height: 32px; float: right; box-sizing: border-box; margin-top: -4px;}
+.elb-ichs-icon-real,.elb-ichs-toggler{width: 30px; height: 30px; float: left; position: relative; border:1px solid #eee;}
+.elb-ichs-icon-real{display: flex; justify-content: center; align-items: center; width: 40px;}
+.elb-ichs-icon-real svg{width: 22px; fill: #555}
+
+.elb-ichs-toggler{color: #fff; background: #7d66e2; cursor: pointer; border: 0px; }
+.elb-ichs-toggler:before{content: ''; left: 10px; top: 8px; position: absolute; width: 10px; height: 10px; border-bottom: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg);}
+.elb-ichs-ctn[data-situation="shown"] .elb-ichs-toggler:before{border-bottom: unset; border-right: unset; top: 12px; border-top: 2px solid currentColor; border-left: 2px solid currentColor; }
+.elb-ichs-list-ctn{position: absolute; width: 100%; right: 0; top: 45px; background: #fafafa; padding: 10px;box-sizing: border-box; z-index: 9999; display: none;}
+.elb-ichs-list{width: 100%; float: left; padding: 5px; height: 300px; overflow: auto;border: 1px solid #eee;margin-top: 5px; }
+.elb-ichs-icon{width: 35px; height: 35px; float: left; color: #555; display: flex; justify-content: center; align-items: center; border: 1px solid #eee; cursor: pointer;}
+.elb-ichs-icon svg{fill: currentColor; width: 20px;}
+.elb-ichs-ctn[data-situation="shown"] .elb-ichs-list-ctn{display: block;}
+.elb-ichs-icon:hover{color: #fff; background: #7d66e2}
+
+/*Booster Addons */
+.elementor-element{position: relative;}
+.elb-icon:after{content: 'ELB';position: absolute;height: 18px;right: 3px;top: 3px;line-height: 18px;padding: 0 7px;font-size: 8px;font-weight: 800;border: 1px solid #eee;}
+
+
+/*Booster Addons COLOR SCHEME*/
+[data-booster-scheme="active"] .elementor-panel #elementor-panel-header{background: #7d66e2!important;}
+[data-booster-scheme="active"] .elementor-panel .elementor-panel-navigation .elementor-panel-navigation-tab.elementor-active,
+[data-booster-scheme="active"] .elementor-template-library-menu-item.elementor-active{border-bottom-color: #7d66e2!important;}
+[data-booster-scheme="active"] .elementor-panel .elementor-element:hover .icon, 
+[data-booster-scheme="active"] .elementor-panel .elementor-element:hover .title{color: #7d66e2!important;}
+[data-booster-scheme="active"] .elementor-add-new-section .elementor-add-section-button,
+[data-booster-scheme="active"] #elementor-mode-switcher:hover, body[data-booster-scheme="active"] .elementor-editor-preview #elementor-mode-switcher{background-color: #7d66e2!important;}

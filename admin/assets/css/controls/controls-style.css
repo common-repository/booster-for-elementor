@@ -1,0 +1,53 @@
+/*==================================================================*\
+===============      	  1- Icon Chooser Style          	==============
+\*==================================================================*/
+.elb-ichs-ctn{float: right;}
+.elb-ichs-ctrl{width: 72px; height: 32px; float: right; box-sizing: border-box; margin-top: -4px;}
+.elb-ichs-icon-real,.elb-ichs-toggler{width: 30px; height: 30px; float: left; position: relative; border:1px solid #eee;}
+.elb-ichs-icon-real{display: flex; justify-content: center; align-items: center; width: 40px;}
+.elb-ichs-icon-real svg{width: 22px; fill: #555}
+.elb-ichs-icon svg{width: 27px}
+.elb-objchs-list .elb-ichs-icon svg{width: 20px; height: 20px;}
+
+.elb-ichs-toggler{color: #fff; background: #7d66e2; cursor: pointer; border: 0px; }
+.elb-ichs-toggler:before{content: ''; left: 10px; top: 8px; position: absolute; width: 10px; height: 10px; border-bottom: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg);}
+.elb-ichs-ctn[data-situation="shown"] .elb-ichs-toggler:before{border-bottom: unset; border-right: unset; top: 12px; border-top: 2px solid currentColor; border-left: 2px solid currentColor; }
+.elb-ichs-list-ctn{position: absolute; width: 100%; right: 0; top: 45px; background: #fafafa; padding: 10px;box-sizing: border-box; z-index: 9999; display: none;}
+.elb-ichs-list{width: 100%; float: left; padding: 5px; height: 300px; overflow: auto;border: 1px solid #eee;margin-top: 5px; }
+.elb-ichs-icon{width: 35px; height: 35px; float: left; color: #7b838b; display: flex; justify-content: center; align-items: center; border: 1px solid #eee; cursor: pointer;}
+.elb-ichs-icon svg{fill: currentColor; width: 20px;}
+.elb-ichs-ctn[data-situation="shown"] .elb-ichs-list-ctn{display: block;}
+.elb-shapchooser-list .elb-ichs-icon:hover{color: #7d66e2; background: transparent;}
+.elb-ichs-icon:hover,.elb-shapchooser-list .elb-ichs-icon[data-situation="active"],.elb-shapchooser-list .elb-ichs-icon[data-situation="active"]:hover{color: #fff; background: #7d66e2}
+
+/*Booster Addons */
+.elementor-element{position: relative;}
+.elb-icon:after{content: 'ELB';position: absolute;height: 18px;right: 3px;top: 3px;line-height: 18px;padding: 0 7px;font-size: 8px;font-weight: 800;border: 1px solid #eee;}
+
+
+/*Booster Addons COLOR SCHEME*/
+[data-booster-scheme="active"] .elementor-panel #elementor-panel-header{background: #7d66e2!important;}
+[data-booster-scheme="active"] .elementor-panel .elementor-panel-navigation .elementor-panel-navigation-tab.elementor-active,
+[data-booster-scheme="active"] .elementor-template-library-menu-item.elementor-active{border-bottom-color: #7d66e2!important;}
+[data-booster-scheme="active"] .elementor-panel .elementor-element:hover .icon, 
+[data-booster-scheme="active"] .elementor-panel .elementor-element:hover .title{color: #7d66e2!important;}
+[data-booster-scheme="active"] .elementor-add-new-section .elementor-add-section-button,
+[data-booster-scheme="active"] #elementor-mode-switcher:hover, body[data-booster-scheme="active"] .elementor-editor-preview #elementor-mode-switcher{background-color: #7d66e2!important;}
+
+
+.elb-shapchooser-list .elb-ichs-icon{width: 25%; height: 70px;}
+.elb-shapchooser-list .elb-ichs-icon img{width: 40px; filter:invert(.8) sepia(.1) saturate(4) hue-rotate(175deg);}
+.elb-shapchooser-list .elb-ichs-icon:hover img{filter:invert(.7);}
+.elb-shapchooser-list .elb-ichs-icon[data-situation="active"] img,.elb-shapchooser-list .elb-ichs-icon[data-situation="active"]:hover img{filter:invert(1);}
+
+
+.elb-ichs-list-ctn.elb-ichsshapes-list-ctn{position: relative; float: left; padding: 0px; top: 0px; overflow:auto;}
+
+.elb-csscrl::-webkit-scrollbar{width: 6px; cursor: pointer;}
+.elb-csscrl::-webkit-scrollbar-track{background: transparent; cursor: pointer;}
+.elb-csscrl::-webkit-scrollbar-thumb{background: #ccc; cursor: pointer; }
+.elbd-img-shape-bg{background: url(../../img/logo-svg.svg);width: 100%;height: 100%;background-size: 80%;float: left;display: inline-block;background-position: center;background-repeat: no-repeat;}
+
+.elb-rght-cl-icon{height: 18px;float: right;line-height: 18px;padding: 0 11px;font-size: 8px;font-weight: 800;border: 1px solid #eee;position: relative;text-align: center;color: #aaa;}
+.elementor-context-menu-list__item:hover .elb-rght-cl-icon{opacity: 1; color: #fff; background:#7252e6; border-color: #7252e6; }
+.elb-rght-cl-icon:before{position: absolute;content: 'ELB';left: 0;top: -1px;height: 100%;width: 100%;}

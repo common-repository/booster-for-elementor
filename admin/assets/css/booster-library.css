@@ -1,0 +1,36 @@
+/*
+.elementor-add-booster-button{background: #6350c4; margin-left: 5px;vertical-align: bottom;}
+.elementor-add-booster-button div{background: url(controls/white-logo.svg); width: 30px; height: 30px; }
+*/
+
+#boosterAddonsLibrary-list{display: flex;flex-flow: wrap;align-items: flex-start;    -webkit-box-align: start;}
+#boosterAddonsLibrary-templates,.boosterAddonsLibrary-window{float: left; width: 100%; position: relative;}
+.boosterAddonsLibrary-template{position: relative;width: calc(33.333% - 30px);overflow: hidden;margin: 15px;padding: 8px;box-shadow: 0 1px 20px 0 rgba(0,0,0,.07);background-color: #fff;}
+.boosterAddonsLibrary-body{position: relative;}
+.boosterAddonsLibrary-thumbnail{width: 100%;}
+.boosterAddonsLibrary-template-preview{width: 100%; position: absolute; height: 100%; cursor: pointer; background: #000000bf;color: #fff;font-size: 19px;display: flex;justify-content: center;align-items: center; opacity: 0; visibility: hidden; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.boosterAddonsLibrary-template:hover .boosterAddonsLibrary-template-preview{opacity: 1; visibility: visible;}
+.boosterAddonsLibrary-footer{position: absolute;width: 100%;bottom: 0;left: 0;-webkit-transform: translateY(100%); transform: translateY(100%);padding: 10px;justify-content: space-between; text-align: left; font-size: 11px;line-height: 1;background-color: #fff; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+.boosterAddonsLibrary-template:hover .boosterAddonsLibrary-footer{-webkit-transform: translateY(0px); transform: translateY(0px);}
+.boosterAddonsLibrary-footer a{color: #6350c4; font-weight: 800; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.boosterAddonsLibrary-footer a:hover{color: #4527A0;}
+#elementor-template-library-header-preview-insert-wrapper .boosterAddonsLibrary-insert-button{background:  #6350c4; color: #fff;}
+#elementor-template-library-header-preview-insert-wrapper .boosterAddonsLibrary-insert-button:hover{background:  #4527A0;}
+
+
+#boosterAddonsLibrary-toolbar{width: 100%;float: left;position: relative;height: 28px;     padding: 0 16px;}
+#boosterAddonsLibrary-toolbar-search{float: right; width: 170px; position: relative;}
+#boosterAddonsLibrary-search{border: 0px;border-bottom: 1px solid #d5dadf; border-radius: 0px; }
+#boosterAddonsLibrary-toolbar-search i{position: absolute;right: 4px;top: 6px;}
+
+#boosterAddonsLibrary-toolbar-filter{float: left;}
+#boosterAddonsLibrary-filter-tags{list-style-type: none;}
+#boosterAddonsLibrary-filter-tags li{float: left; cursor: pointer;margin-right: 10px;font-size: 11px;font-weight: 500; border-bottom: 2px solid transparent;}
+#boosterAddonsLibrary-filter-tags li:hover{color:#6350c4;}
+#boosterAddonsLibrary-filter-tags li.active{color: #6350c4; border-color: #6350c4;}
+.boosterAddonsLibrary-preview>iframe{width: 150%;height: 150%;-webkit-transform: scale(.666) translateX(-25%) translateY(-25%);transform: scale(.666) translateX(-25%) translateY(-25%);}
+.boosterAddonsLibrary-preview{height: 100%;overflow: hidden;}
+.boosterAddonsLibrary-elementor-go-pro,.boosterAddonsLibrary-elementor-go-pro:hover{color: #FFC107!important;}
+.boosterAddonsLibrary-elementor-go-pro i{margin-right: 5px!important; font-size: 16px;}
+.boosterAddonsLibrary-logo-wrap{width: 40px;margin-top: 3px;margin-right: 8px;}
+.boosterAddonsLibrary-badge{position: absolute;background: #6350c4;right: 5px;top: 5px;color: #fff;padding: 2px 7px;text-transform: uppercase;font-weight: 900;font-size: 10px;}

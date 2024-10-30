@@ -1,0 +1,10 @@
+== Changelog ==	
+= 1.0.2 =
+- Modern Image Widget : Fixed overlay issue
+- Bug Fix : issue in the Booster Addons admin panel
+
+= 1.0.1 =
+- Bug Fix : issue in the Booster Addons admin panel
+
+= 1.0 = 
+- Initial release
